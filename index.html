@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية SWDream - منصتك التعليمية المتكاملة</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>SWDream Academy</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="nav-links desktop-only">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#tracks">المسارات</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">المسارات التعليمية <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="cybersecurity.html">الأمن السيبراني</a></li>
+                        <li><a href="backend.html">Backend Development</a></li>
+                        <li><a href="fullstack.html">Fullstack Development</a></li>
+                        <li><a href="ai-engineer.html">مهندس الذكاء الاصطناعي</a></li>
+                        <li><a href="frontend.html">Frontend Development</a></li>
+                        <li><a href="data-analysis.html">تحليل البيانات</a></li>
+                    </ul>
+                </li>
+                <li><a href="#features">المميزات</a></li>
+                <li><a href="#testimonials">آراء الطلاب</a></li>
+                <li><a href="community.html">المجتمع</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+            
+            <div class="nav-actions desktop-only">
+                <a href="login.html" class="btn-login">تسجيل الدخول</a>
+                <a href="signup.html" class="btn-signup">ابدأ الآن</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>SWDream Academy</span>
+            </div>
+            <button class="sidebar-close" id="sidebarClose" title="إغلاق القائمة الجانبية">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+            <ul class="sidebar-menu">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#tracks">المسارات</a></li>
+                <li class="sidebar-dropdown">
+                    <a href="#" class="sidebar-dropdown-toggle">
+                        المسارات التعليمية 
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="sidebar-dropdown-menu">
+                        <li><a href="cybersecurity.html">الأمن السيبراني</a></li>
+                        <li><a href="backend.html">Backend Development</a></li>
+                        <li><a href="fullstack.html">Fullstack Development</a></li>
+                        <li><a href="ai-engineer.html">مهندس الذكاء الاصطناعي</a></li>
+                        <li><a href="frontend.html">Frontend Development</a></li>
+                        <li><a href="data-analysis.html">تحليل البيانات</a></li>
+                    </ul>
+                </li>
+                <li><a href="#features">المميزات</a></li>
+                <li><a href="#testimonials">آراء الطلاب</a></li>
+                <li><a href="community.html">المجتمع</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        <div class="sidebar-actions">
+            <a href="login.html" class="btn-login">تسجيل الدخول</a>
+            <a href="signup.html" class="btn-signup">ابدأ الآن</a>
+        </div>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>مستقبلك يبدأ هنا</h1>
+            <p>منصتنا التعليمية الرائدة تُقدم لك أفضل المسارات التقنية في الأمن السيبراني، التطوير الكامل، الذكاء الاصطناعي، والواجهة الأمامية</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="window.location.href='#tracks'">استكشف المسارات</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-illustration">
+                <div class="illustration-main">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="illustration-badge badge-1">
+                    <i class="fas fa-code"></i>
+                    <span>Frontend</span>
+                </div>
+                <div class="illustration-badge badge-2">
+                    <i class="fas fa-server"></i>
+                    <span>Backend</span>
+                </div>
+                <div class="illustration-badge badge-3">
+                    <i class="fas fa-brain"></i>
+                    <span>AI</span>
+                </div>
+                <div class="illustration-badge badge-4">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Security</span>
+                </div>
+                <div class="illustration-badge badge-5">
+                    <i class="fas fa-layer-group"></i>
+                    <span>Fullstack</span>
+                </div>
+                <div class="illustration-badge badge-6">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Data</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracks Section -->
+    <section id="tracks" class="tracks">
+        <div class="section-header">
+            <h2>المسارات التعليمية</h2>
+            <p>اختر المسار الذي يناسب طموحاتك المهنية</p>
+        </div>
+        <div class="tracks-container">
+            <!-- Cybersecurity Track -->
+            <div class="track-card" data-track="cybersecurity">
+                <div class="track-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>الأمن السيبراني</h3>
+                <p>تعلم حماية الأنظمة والشبكات من التهديدات الإلكترونية</p>
+                <ul class="track-topics">
+                    <li><i class="fas fa-check"></i> اختبارات الاختراق</li>
+                    <li><i class="fas fa-check"></i> تحليل البرمجيات الخبيثة</li>
+                    <li><i class="fas fa-check"></i> أمن الشبكات</li>
+                    <li><i class="fas fa-check"></i> التشفير والأمان</li>
+                </ul>
+                <div class="track-duration">
+                    <i class="far fa-clock"></i>
+                    <span>6 أشهر</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-track" onclick="window.location.href='signup.html'">سجل الآن</button>
+                </div>
+            </div>
+
+            <!-- Backend Track -->
+            <div class="track-card" data-track="backend">
+                <div class="track-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>تطوير Backend</h3>
+                <p>بناء الخوادم وقواعد البيانات والواجهات الخلفية</p>
+                <ul class="track-topics">
+                    <li><i class="fas fa-check"></i> Node.js & Express</li>
+                    <li><i class="fas fa-check"></i> Python & Django</li>
+                    <li><i class="fas fa-check"></i> قواعد البيانات</li>
+                    <li><i class="fas fa-check"></i> RESTful APIs</li>
+                </ul>
+                <div class="track-duration">
+                    <i class="far fa-clock"></i>
+                    <span>5 أشهر</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-track" onclick="window.location.href='signup.html'">سجل الآن</button>
+                </div>
+            </div>
+
+            <!-- Fullstack Track -->
+            <div class="track-card featured" data-track="fullstack">
+                <div class="featured-badge">الأكثر طلباً</div>
+                <div class="track-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3>تطوير Fullstack</h3>
+                <p>إتقان التطوير الكامل للواجهة والخلفية</p>
+                <ul class="track-topics">
+                    <li><i class="fas fa-check"></i> HTML/CSS/JavaScript</li>
+                    <li><i class="fas fa-check"></i> React & Vue.js</li>
+                    <li><i class="fas fa-check"></i> Node.js & Databases</li>
+                    <li><i class="fas fa-check"></i> DevOps Basics</li>
+                </ul>
+                <div class="track-duration">
+                    <i class="far fa-clock"></i>
+                    <span>8 أشهر</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-track" onclick="window.location.href='signup.html'">سجل الآن</button>
+                </div>
+            </div>
+
+            <!-- AI Engineer Track -->
+            <div class="track-card" data-track="ai">
+                <div class="track-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>مهندس الذكاء الاصطناعي</h3>
+                <p>بناء وتطبيق نماذج التعلم الآلي والذكاء الاصطناعي</p>
+                <ul class="track-topics">
+                    <li><i class="fas fa-check"></i> Python & TensorFlow</li>
+                    <li><i class="fas fa-check"></i> التعلم العميق</li>
+                    <li><i class="fas fa-check"></i> معالجة اللغة الطبيعية</li>
+                    <li><i class="fas fa-check"></i> رؤية الحاسوب</li>
+                </ul>
+                <div class="track-duration">
+                    <i class="far fa-clock"></i>
+                    <span>7 أشهر</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-track" onclick="window.location.href='signup.html'">سجل الآن</button>
+                </div>
+            </div>
+
+            <!-- Frontend Track -->
+            <div class="track-card" data-track="frontend">
+                <div class="track-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>تطوير Frontend</h3>
+                <p>تصميم واجهات المستخدم الحديثة والتفاعلية</p>
+                <ul class="track-topics">
+                    <li><i class="fas fa-check"></i> HTML5 & CSS3</li>
+                    <li><i class="fas fa-check"></i> JavaScript ES6+</li>
+                    <li><i class="fas fa-check"></i> React & Next.js</li>
+                    <li><i class="fas fa-check"></i> UI/UX Design</li>
+                </ul>
+                <div class="track-duration">
+                    <i class="far fa-clock"></i>
+                    <span>4 أشهر</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-track" onclick="window.location.href='signup.html'">سجل الآن</button>
+                </div>
+            </div>
+
+            <!-- Data Analysis Track -->
+            <div class="track-card" data-track="data-analysis">
+                <div class="track-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>تحليل البيانات</h3>
+                <p>تحويل البيانات إلى رؤى قابلة للتنفيذ لاتخاذ قرارات ذكية</p>
+                <ul class="track-topics">
+                    <li><i class="fas fa-check"></i> Python & Pandas</li>
+                    <li><i class="fas fa-check"></i> SQL & Databases</li>
+                    <li><i class="fas fa-check"></i> Data Visualization</li>
+                    <li><i class="fas fa-check"></i> Machine Learning Basics</li>
+                </ul>
+                <div class="track-duration">
+                    <i class="far fa-clock"></i>
+                    <span>5 أشهر</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-track" onclick="window.location.href='signup.html'">سجل الآن</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>مميزات منصتنا</h2>
+            <p>لماذا تختار SWDream Academy؟</p>
+        </div>
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>فيديوهات عالية الجودة</h3>
+                <p>محتوى تعليمي مرئي بدقة عالية مع إمكانية تحميل الدروس</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>مشاريع عملية</h3>
+                <p>تطبيق ما تعلمته في مشاريع واقعية لمحفظتك</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>شهادات معتمدة</h3>
+                <p>شهادات معترف بها في سوق العمل بعد إتمام المسار</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>شهادات معتمدة</h3>
+                <p>شهادات معترف بها في سوق العمل بعد إتمام المسار</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>مجتمع نشط</h3>
+                <p>انضم لآلاف الطلاب وشارك في النقاشات والمشاريع</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>دعم على مدار الساعة</h3>
+                <p>فريق دعم جاهز لمساعدتك في أي وقت</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <h2>آراء طلابنا</h2>
+            <p>ماذا يقول خريجونا عن تجربتهم معنا</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><rect fill='%23f3f4f6' width='100%25' height='100%25'/><circle cx='30' cy='22' r='16' fill='%236366f1'/><rect x='10' y='40' width='40' height='8' rx='4' fill='%236366f1'/></svg>" alt="Student">
+                    <div class="testimonial-info">
+                        <h4>أحمد محمد</h4>
+                        <span>خريج مسار الأمن السيبراني</span>
+                    </div>
+                </div>
+                <p>"منصة رائعة علمتني كل ما أحتاجه للعمل في مجال الأمن السيبراني. الآن أنا أعمل كـ Security Analyst في شركة كبيرة."</p>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><rect fill='%23f3f4f6' width='100%25' height='100%25'/><circle cx='30' cy='22' r='16' fill='%236366f1'/><rect x='10' y='40' width='40' height='8' rx='4' fill='%236366f1'/></svg>" alt="Student">
+                    <div class="testimonial-info">
+                        <h4>سارة علي</h4>
+                        <span>خريجة مسار Fullstack</span>
+                    </div>
+                </div>
+                <p>"المسار الكامل كان تجربة مذهلة. تعلمت تقنيات حديثة وشاركت في مشاريع عملية ساعدتني في الحصول على عملي الأول."</p>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><rect fill='%23f3f4f6' width='100%25' height='100%25'/><circle cx='30' cy='22' r='16' fill='%236366f1'/><rect x='10' y='40' width='40' height='8' rx='4' fill='%236366f1'/></svg>" alt="Student">
+                    <div class="testimonial-info">
+                        <h4>خالد عمر</h4>
+                        <span>خريج مسار الذكاء الاصطناعي</span>
+                    </div>
+                </div>
+                <p>"تعلمت بناء نماذج التعلم الآلي من الصفر. الآن أعمل على مشاريع AI متقدمة وأشارك في مسابقات عالمية."</p>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>تواصل معنا</h2>
+                <p>لديك استفسار؟ نحن هنا لمساعدتك</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>العنوان: المغرب - أكادير</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>البريد الإلكتروني: sabirboukhlif1@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>الهاتف: +212 699 230 061</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" title="تويتر"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="لينكدإن"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="جيثاب"><i class="fab fa-github"></i></a>
+                    <a href="#" title="يوتيوب"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="الاسم الكامل" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="رقم الهاتف">
+                </div>
+                <div class="form-group">
+                    <select required title="اختر المسار التعليمي">
+                        <option value="">اختر المسار</option>
+                        <option value="cybersecurity">الأمن السيبراني</option>
+                        <option value="backend">Backend</option>
+                        <option value="fullstack">Fullstack</option>
+                        <option value="ai">الذكاء الاصطناعي</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="data-analysis">تحليل البيانات</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="رسالتك..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">إرسال الرسالة</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>SWDream Academy</span>
+                </div>
+                <p>منصتك التعليمية الأولى لتعلم مهارات التقنية الحديثة</p>
+            </div>
+            <div class="footer-section">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#tracks">المسارات</a></li>
+                    <li><a href="#features">المميزات</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>المسارات</h4>
+                <ul>
+                    <li><a href="cybersecurity.html">الأمن السيبراني</a></li>
+                    <li><a href="backend.html">Backend Development</a></li>
+                    <li><a href="fullstack.html">Fullstack Development</a></li>
+                    <li><a href="ai-engineer.html">AI Engineering</a></li>
+                    <li><a href="frontend.html">Frontend Development</a></li>
+                    <li><a href="data-analysis.html">Data Analysis</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>النشرة البريدية</h4>
+                <p>اشترك للحصول على آخر الأخبار والعروض</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="بريدك الإلكتروني">
+                    <button type="submit">اشترك</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SWDream Academy. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- AI Assistant -->
+    <link rel="stylesheet" href="../css/ai-assistant.css">
+    <script src="../js/ai-assistant.js"></script>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
